@@ -29,6 +29,8 @@ vim.opt.shiftwidth = 4
 
 vim.opt.hlsearch = false
 
+vim.opt.wrap = false
+
 vim.opt.incsearch = true
 vim.opt.swapfile = false
 vim.opt.updatetime = 50
