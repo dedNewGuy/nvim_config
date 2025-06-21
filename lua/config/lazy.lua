@@ -38,6 +38,8 @@ vim.opt.colorcolumn = "100"
 vim.opt.undofile = true
 vim.opt.signcolumn = "yes"
 
+vim.opt.guicursor = "n-v-i-c:block,a:blinkwait700-blinkoff400-blinkon250"
+
 require("config.remap")
 
 -- Setup lazy.nvim

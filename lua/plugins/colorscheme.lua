@@ -7,6 +7,12 @@ return {
 		opts = {}
 	},
 
-	-- Melange
-	{ "savq/melange-nvim" }
+	{
+		'daneofmanythings/chalktone.nvim',
+		priority = 1000,
+		lazy = false,
+		config = function()
+			require('chalktone').setup()
+		end
+	}
 }

@@ -1,3 +1,3 @@
 require("config.lazy")
 
-vim.cmd.colorscheme('melange')
+vim.cmd.colorscheme('evening')
