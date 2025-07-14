@@ -5,7 +5,6 @@ vim.keymap.set('n', '<leader>x', ':.lua<cr>')
 vim.keymap.set('v', '<leader>x', ':lua<cr>')
 
 vim.keymap.set('i', '<C-c>', '<Esc>');
---
 vim.keymap.set('n', "<M-j>", '<cmd>cnext<CR>zz')
 vim.keymap.set('n', "<M-k>", '<cmd>cprev<CR>zz')
 
@@ -17,3 +16,12 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 
 vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]])
 vim.keymap.set('n', '<leader>Y', [["+Y]])
+
+vim.keymap.set('n', '<leader>cx', ':!chmod +x %<cr>');
+
+vim.keymap.set('n', '<leader>cgn', '*N_cgn');
+
+vim.keymap.set('n', '<M-=>', '<C-w>+')
+vim.keymap.set('n', '<M-->', '<C-w>-')
+vim.keymap.set('n', '<M-,>', '<C-w><')
+vim.keymap.set('n', '<M-.>', '<C-w>>')

@@ -14,5 +14,8 @@ return {
 		config = function()
 			require('chalktone').setup()
 		end
-	}
+	},
+
+	{ "blazkowolf/gruber-darker.nvim" }
+
 }

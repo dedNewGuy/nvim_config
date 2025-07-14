@@ -30,11 +30,12 @@ vim.opt.shiftwidth = 4
 vim.opt.hlsearch = false
 
 vim.opt.wrap = false
+vim.opt.termguicolors = true
 
 vim.opt.incsearch = true
 vim.opt.swapfile = false
 vim.opt.updatetime = 50
-vim.opt.colorcolumn = "100"
+vim.opt.colorcolumn = "70"
 vim.opt.undofile = true
 vim.opt.signcolumn = "yes"
 
@@ -56,5 +57,5 @@ require("lazy").setup({
   change_detection = {
 	  enabled = true,
 	  notify = false
-  }
+  },
 })
