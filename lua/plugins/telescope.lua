@@ -5,10 +5,24 @@ return {
 
 	config = function()
 		local builtin = require('telescope.builtin')
-		vim.keymap.set('n', '<leader>pf', builtin.find_files, { desc = "Telescope Find Files" })
+		-- [P]roject
+		vim.keymap.set('n', '<leader>pf', function ()
+			builtin.find_files({
+				no_ignore = true
+			})
+		end, { desc = "Telescope Find Files" })
 		vim.keymap.set('n', '<leader>pg', builtin.git_files, { desc = "Telescope Git Files" })
-		vim.keymap.set('n', '<leader>pw', builtin.live_grep, { desc = "Telescope Live Grep" })
+		vim.keymap.set('n', '<leader>ps', builtin.live_grep, { desc = "Telescope Live Grep" })
+
+		-- [F]ind
 		vim.keymap.set('n', '<leader>fk', builtin.keymaps, { desc = "Telescope Key Map" })
 		vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "Telescope Search Help" })
+		vim.keymap.set('n', '<leader>fn', function ()
+			builtin.find_files({
+				search_dirs = {
+					directory = "~/.config/nvim"
+				}
+			})
+		end, { desc = "Telescope Search Help" })
 	end
 }

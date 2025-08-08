@@ -30,7 +30,7 @@ function ColorMyPencils(color, transparent)
 	end
 end
 
-ColorMyPencils("rose-pine",  false)
+ColorMyPencils("rose-pine",  true)
 
 
 function SimpCompileMode()
