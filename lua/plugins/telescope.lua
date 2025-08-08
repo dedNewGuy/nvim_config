@@ -18,11 +18,7 @@ return {
 		vim.keymap.set('n', '<leader>fk', builtin.keymaps, { desc = "Telescope Key Map" })
 		vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "Telescope Search Help" })
 		vim.keymap.set('n', '<leader>fn', function ()
-			builtin.find_files({
-				search_dirs = {
-					directory = "~/.config/nvim"
-				}
-			})
+			builtin.find_files({ cwd = vim.fn.stdpath 'config' })
 		end, { desc = "Telescope Search Help" })
 	end
 }
