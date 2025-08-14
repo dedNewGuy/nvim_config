@@ -13,6 +13,7 @@ return {
 		end, { desc = "Telescope Find Files" })
 		vim.keymap.set('n', '<leader>pg', builtin.git_files, { desc = "Telescope Git Files" })
 		vim.keymap.set('n', '<leader>ps', builtin.live_grep, { desc = "Telescope Live Grep" })
+		vim.keymap.set('n', '<leader>pt', builtin.tags, { desc = "Telescope Tags" })
 
 		-- [F]ind
 		vim.keymap.set('n', '<leader>fk', builtin.keymaps, { desc = "Telescope Key Map" })
