@@ -20,6 +20,15 @@ return {
 	},
 
 	{
+		"gbprod/nord.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require("nord").setup({})
+		end,
+	},
+
+	{
 		"rose-pine/neovim",
 		name = "rose-pine",
 		config = function ()
@@ -38,6 +47,15 @@ return {
 		lazy = false,
 		priority = 1000,
 		opts = {},
+	},
+
+	{
+		'AlexvZyl/nordic.nvim',
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require('nordic').load()
+		end
 	}
 
 }

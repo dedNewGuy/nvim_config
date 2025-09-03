@@ -30,7 +30,7 @@ function ColorMyPencils(color, transparent)
 	end
 end
 
-ColorMyPencils("github-monochrome-rosepine",  true)
+ColorMyPencils("nord",  true)
 
 
 function SimpCompileMode()
