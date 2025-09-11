@@ -120,7 +120,8 @@ function ColorMyPencils(color, transparent)
 	end
 end
 
-ColorMyPencils("nord",  true)
+ColorMyPencils("default",  true)
+-- vim.cmd("syntax off")
 
 
 function SimpCompileMode()

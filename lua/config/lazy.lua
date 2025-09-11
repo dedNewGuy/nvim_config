@@ -38,6 +38,7 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "70"
 vim.opt.undofile = true
 vim.opt.signcolumn = "yes"
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.guicursor = "n-v-i-c:block,a:blinkwait700-blinkoff400-blinkon250"
 
