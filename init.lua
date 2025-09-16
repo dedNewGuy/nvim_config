@@ -120,7 +120,7 @@ function ColorMyPencils(color, transparent)
 	end
 end
 
-ColorMyPencils("default",  true)
+ColorMyPencils("rose-pine",  true)
 -- vim.cmd("syntax off")
 
 
