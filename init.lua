@@ -99,7 +99,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 
 function ColorMyPencils(color, transparent)
-	color = color or 'vim'
+	color = color or 'default'
 	vim.cmd.colorscheme(color)
 
 	if transparent == nil then
@@ -120,9 +120,9 @@ function ColorMyPencils(color, transparent)
 	end
 end
 
-ColorMyPencils("rose-pine",  true)
+ColorMyPencils("everforest", true)
 -- vim.cmd("syntax off")
-
+vim.api.nvim_set_hl(0, 'CursorLine', { underline = true })
 
 function SimpCompileMode()
 	vim.cmd("cclose")
